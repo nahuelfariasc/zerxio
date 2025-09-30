@@ -1,0 +1,16 @@
+{
+  "name": "Zerxio",
+  "short_name": "Zerxio",
+  "description": "Zerxio - Hosting Web",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "linear-gradient(135deg,#182237,#0f172a)",
+  "theme_color": "#f9f9f9",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}
