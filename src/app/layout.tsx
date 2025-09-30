@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import AnimatedBackground from "@/components/animated-background";
 import SciFiGrid from "@/components/sci-fi-grid";
+import AOSProvider from "@/components/aos-provider";
 
 // Fuentes cargadas de forma estática
 const geistSans = Geist({
@@ -97,13 +98,17 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body suppressHydrationWarning={true} className="relative">
-        <AnimatedBackground />
-        <div className="site">
-          <Header />
-          {children}
-          <Footer />
-        </div>
-        <SciFiGrid />
+        <AOSProvider>
+          <AnimatedBackground />
+          <SciFiGrid />
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </AOSProvider>
       </body>
     </html>
   );

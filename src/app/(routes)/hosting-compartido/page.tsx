@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CompartidoPlan } from "@/components/compartido-plan";
 import Link from "next/link";
 import CtaBanner from "@/components/banner";
+import HeroSection from "@/components/hero";
 
 interface CompartidoPlanData {
   id: number;
@@ -60,18 +61,13 @@ export default function Page() {
 
   return (
     <>
-      <section className="hero min-h-[40vh] relative flex flex-col justify-center items-center gap-6 bg-gradient-to-b from-blue-900/20 via-slate-900/20 to-slate-900 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05]" />
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent font-mono tracking-wide">
-            Hosting Compartido
-          </h1>
-          <div className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            La solución perfecta para sitios web personales, blogs y pequeñas empresas. 
-            Hosting confiable, económico y con todas las herramientas que necesitas.
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="Hosting Compartido"
+        subtitle="La solución perfecta para sitios web personales, blogs y pequeñas empresas. 
+            Hosting confiable, económico y con todas las herramientas que necesitas."
+        showEffects={false}
+        className="mb-12"
+      />
 
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -83,7 +79,6 @@ export default function Page() {
                 description={plan.description}
                 cost={plan.cost}
                 features={plan.list}
-                isPopular={index === 1}
                 link={plan.link}
                 className="h-full"
               />

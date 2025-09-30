@@ -34,33 +34,44 @@ export function CompartidoPlan({
       className={cn(
         "relative p-8 rounded-xl border border-cyan-400/20 bg-slate-900/80 backdrop-blur-sm",
         "transition-all duration-500 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10",
-        "flex flex-col h-full",
+        "flex flex-col h-full transform",
         isPopular && "border-2 border-cyan-400/40 shadow-lg shadow-cyan-500/10",
         className
       )}
+      data-aos="fade-up"
+      data-aos-duration="600"
     >
-      {isPopular && (
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs font-medium py-1 px-3 rounded-full whitespace-nowrap">
+      {/* {isPopular && (
+        <div 
+          className="absolute -top-3 left-1/2 transform -translate-x-1/2"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          <span className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs font-medium py-1 px-3 rounded-full whitespace-nowrap shadow-lg shadow-cyan-500/20">
             Más Popular
           </span>
         </div>
-      )}
+      )} */}
       
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
         <div className="flex-grow">
-          <h3 className="text-2xl font-bold mb-2 text-cyan-400">{title}</h3>
-          <p className="text-muted-foreground mb-6">{description}</p>
+          <h3 className="text-2xl font-bold text-foreground mb-2" data-aos="fade-up" data-aos-delay="150">{title}</h3>
+          <p className="text-muted-foreground mb-6 flex-grow" data-aos="fade-up" data-aos-delay="200">{description}</p>
           
-          <div className="mb-6">
-            <span className="text-3xl font-bold text-white">${cost.toFixed(2)}</span>
+          <div className="mb-6" data-aos="fade-up" data-aos-delay="250">
+            <span className="text-4xl font-bold text-foreground">${cost}</span>
             <span className="text-muted-foreground">/mes</span>
           </div>
           
           <ul className="space-y-3 mb-8">
             {featureList.map((feature, index) => (
-              <li key={index} className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-cyan-400 mr-2 mt-0.5 flex-shrink-0" />
+              <li 
+                key={index} 
+                className="flex items-start"
+                data-aos="fade-up"
+                data-aos-delay={`${300 + (index * 50)}`}
+              >
+                <CheckCircle className="h-5 w-5 text-cyan-500 mr-2 mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground">{feature}</span>
               </li>
             ))}

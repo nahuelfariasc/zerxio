@@ -17,32 +17,48 @@ export default function CtaBanner({
   variant = 'gradient',
   className = ''
 }: BannerProps) {
-
-    return (
-      <section className={`banner relative py-16 overflow-hidden ${className}`}>        
-        <div className="container relative z-10">
-          <div className={`md:p-12 rounded-2xl p-8 border border-cyan-500/30 backdrop-blur-sm shadow-2xl shadow-cyan-500/10 ${
-            variant === 'gradient' 
-              ? 'bg-gradient-to-r from-slate-900/90 via-slate-800/90 to-slate-900/90' 
-              : 'bg-background/80'
-          }`}>
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-                {title}
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                {description}
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button 
-                  asChild
-                  className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium py-3 px-8 rounded-lg hover:opacity-90 transition-opacity"
-                >
-                  <a href={ctaUrl}>
-                    {ctaText}
-                  </a>
-                </Button>
-              </div>
+  return (
+    <section className={`banner relative py-16 overflow-hidden ${className}`}>
+      <div className="container relative z-10">
+        <div 
+          className={`md:p-12 rounded-2xl p-8 border border-cyan-500/30 backdrop-blur-sm shadow-2xl shadow-cyan-500/10 
+          transition-all duration-500 hover:shadow-cyan-500/20 hover:border-cyan-500/50
+          ${variant === 'gradient' 
+            ? 'bg-gradient-to-r from-slate-900/90 via-slate-800/90 to-slate-900/90' 
+            : 'bg-background/80'}`}
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 
+              className="text-3xl md:text-4xl font-bold mb-4 text-foreground"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              {title}
+            </h2>
+            <p 
+              className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              {description}
+            </p>
+            <div 
+              className="flex flex-col sm:flex-row justify-center gap-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <Button 
+                asChild
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium py-3 px-8 rounded-lg 
+                hover:opacity-90 transition-all duration-300 hover:scale-105 transform"
+              >
+                <a href={ctaUrl}>
+                  {ctaText}
+                </a>
+              </Button>
+            </div>
             </div>
             
             {/* Decorative elements */}
@@ -55,9 +71,9 @@ export default function CtaBanner({
                   opacity: 0.2
                 }}
               />
-            </div>
           </div>
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 }
