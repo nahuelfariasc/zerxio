@@ -20,7 +20,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     id: 1,
     title: "Básico",
     description: "Ideal para sitios web personales y blogs",
-    cost: 9.99,
+    cost: 12000,
     list: "5 GB SSD ultrarrápido\n50 GB transferencia mensual\n5 cuentas de email\n2 bases de datos MySQL\n2 subdominios\nCertificado SSL gratuito\ncPanel incluido",
     link: "/checkout/compartido-basico"
   },
@@ -28,7 +28,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     id: 2,
     title: "Intermedio",
     description: "Perfecto para pequeñas empresas",
-    cost: 19.99,
+    cost: 25000,
     list: "15 GB SSD ultrarrápido\n100 GB transferencia mensual\n10 cuentas de email\n5 bases de datos MySQL\n6 subdominios\nCertificado SSL gratuito\ncPanel incluido",
     link: "/checkout/compartido-intermedio"
   },
@@ -36,7 +36,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     id: 3,
     title: "Avanzado",
     description: "Para sitios con alto tráfico",
-    cost: 29.99,
+    cost: 40000,
     list: "30 GB SSD ultrarrápido\nTransferencia ilimitada\nCuentas de email ilimitadas\nBases de datos ilimitadas\nCertificado SSL Gratis\n5 dominios alias (parked)\nCertificado SSL gratuito\ncPanel incluido",
     link: "/checkout/compartido-avanzado"
   }

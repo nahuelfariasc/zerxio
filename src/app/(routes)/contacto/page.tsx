@@ -11,7 +11,11 @@ export default function Contacto() {
       <section className="py-20 lg:py-32 relative overflow-hidden z-20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-slate-900 to-slate-900"></div>
         <div className="container mx-auto px-4 lg:px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="800"
+          >
             <Link
               href="/"
               className="inline-flex items-center text-cyan-400 hover:text-cyan-300 mb-6 transition-colors"
@@ -19,10 +23,18 @@ export default function Contacto() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Volver al inicio
             </Link>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent font-mono tracking-wide">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent font-mono tracking-wide"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+            >
               Contáctanos
             </h1>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            >
               ¿Tienes preguntas sobre nuestros servicios? Nuestro equipo de expertos está aquí para ayudarte las 24
               horas del día.
             </p>
@@ -39,7 +51,11 @@ export default function Contacto() {
                   "relative p-10 rounded-xl border border-cyan-400/20 bg-slate-900/80 backdrop-blur-sm",
                   "transition-all duration-500 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/10",
                   "flex flex-col h-full"
-                )}>
+                )}
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="800"
+                >
               <CardHeader className="p-0">
                 <CardTitle className="text-white text-2xl">Envíanos un Mensaje</CardTitle>
                 <CardDescription className="text-slate-400">
@@ -52,7 +68,11 @@ export default function Contacto() {
             </Card>
 
             {/* Contact Info */}
-            <div className="space-y-8">
+            <div className="space-y-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            >
               {/* Contact Methods */}
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-white mb-6">Otras Formas de Contacto</h2>

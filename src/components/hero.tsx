@@ -50,7 +50,7 @@ export default function HeroSection({
       {ctaText && ctaUrl && (
         <a
           href={ctaUrl}
-          className="mt-4 inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 group"
+          className="mt-4 inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 transform group"
           data-aos="fade-up"
           data-aos-delay="400"
           data-aos-duration="800"

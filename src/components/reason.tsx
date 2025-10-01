@@ -159,17 +159,28 @@ const Reason = ({
     <section className={`relative py-20 ${className}`} {...props}>
       <div className="container">
         <div className="relative z-10 text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400"
+           data-aos="fade-up"
+           data-aos-delay="200"
+           data-aos-duration="800"
+          >
             {title}
           </h2>
           {description && (
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+            >
               {description}
             </p>
           )}
         </div>
         
-        <div className={`grid ${gridClasses} gap-8 relative`}>
+        <div className={`grid ${gridClasses} gap-8 relative`}
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="800">
           {features.map((feature, idx) => renderFeature(feature, idx))}
         </div>
       </div>

@@ -60,17 +60,28 @@ export default function Plans({
     >
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800"
+          >
             {title}
           </h2>
           {description && (
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            >
               {description}
             </p>
           )}
         </div>
         
-        <div className={`grid ${gridClasses} gap-8`}>
+        <div className={`grid ${gridClasses} gap-8`}
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="800">
           {plans.map((plan, index) =>
             renderPlanItem ? (
               <div key={plan.id || index}>

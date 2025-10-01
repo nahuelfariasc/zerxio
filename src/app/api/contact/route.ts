@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     const TO_EMAIL = "info@zerxio.com";
-    const FROM_EMAIL = process.env.RESEND_FROM || "onboarding@resend.dev"; // Cambia a un remitente verificado de tu dominio
+    const FROM_EMAIL = process.env.RESEND_FROM || "info@zerxio.com"; // Cambia a un remitente verificado de tu dominio
 
     if (!RESEND_API_KEY) {
       // Evitar fallar en desarrollo: logueamos y devolvemos 200 con un warning
