@@ -76,12 +76,14 @@ export default function Header() {
             )}
           </div>
           <Link href="/contacto" className="text-slate-300 hover:text-white transition-colors">Contacto</Link>
-          <Button
-            variant="outline"
-            className=""
-          >
-            Iniciar Sesión
-          </Button>
+          <Link href="https://panel.zerxio.com/panel/blesta/client/login/">
+            <Button
+              variant="outline"
+              className=""
+            >
+              Iniciar Sesión
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile menu button */}
@@ -126,7 +128,7 @@ export default function Header() {
             Contacto
           </Link>
           <Link 
-            href="/login" 
+            href="https://panel.zerxio.com/panel/blesta/client/login/" 
             className="block py-2 text-slate-300 hover:text-white"
             onClick={() => setOpen(false)}
           >
