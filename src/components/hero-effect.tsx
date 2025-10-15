@@ -213,7 +213,7 @@ export default function HeroEffect() {
   }, [])
 
   return (
-    <div ref={containerRef} className="absolute inset-0 pointer-events-none h-[100%]" style={{ top: "50%", transform: "translateY(-40%)" }}>
+    <div ref={containerRef} className="absolute inset-0 pointer-events-none h-[100%]" style={{ top: "50%", transform: "translateY(-40%)", opacity: .5 }}>
       <canvas ref={canvasRef} className="w-full h-full opacity-60" />
 
       {/* Iconos estáticos para referencia visual */}

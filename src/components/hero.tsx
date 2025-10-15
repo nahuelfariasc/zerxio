@@ -20,7 +20,7 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <section 
-      className={`hero min-h-[60vh] relative flex flex-col justify-center items-center gap-6 bg-gradient-to-b from-blue-900/20 via-slate-900/20 to-slate-900 overflow-hidden ${className}`}
+      className={`hero min-h-[80vh] md:min-h-[60vh] relative flex flex-col justify-center items-center gap-6 bg-gradient-to-b from-blue-900/20 via-slate-900/20 to-slate-900 overflow-hidden ${className}`}
       data-aos="fade-in"
       data-aos-duration="1000"
     >
