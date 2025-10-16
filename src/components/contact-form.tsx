@@ -144,7 +144,6 @@ export default function ContactForm() {
             <span className="inline-flex items-center">
               <Send className="w-4 h-4 mr-2 transition-transform group-hover:translate-x-1" />
               Enviar Mensaje
-              <Send className="ml-2 w-4 h-4" />
             </span>
           )}
         </Button>
