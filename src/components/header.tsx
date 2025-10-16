@@ -90,6 +90,7 @@ export default function Header() {
         <button 
           onClick={() => setOpen(!open)} 
           className="md:hidden text-slate-300 hover:text-white transition-colors"
+          aria-label={open ? 'Close menu' : 'Open menu'}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>

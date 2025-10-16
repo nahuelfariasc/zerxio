@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import AnimatedBackground from "@/components/animated-background";
 import SciFiGrid from "@/components/sci-fi-grid";
 import AOSProvider from "@/components/aos-provider";
+import { Analytics } from "@vercel/analytics/next"
 
 // Fuentes cargadas de forma estática
 const geistSans = Geist({
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     template: "%s | Zerxio"
   },
   description: "Hosting Web profesional que acelera el éxito de tu negocio con máxima velocidad, seguridad y soporte técnico 24/7.",
-  keywords: ["hosting", "web hosting", "dominio", "servidores", "hosting web argentina", "hosting rápido", "ssl", "email profesional"],
+  keywords: ["hosting", "web hosting", "servidores", "hosting web argentina", "hosting argentina", "hosting rápido", "ssl"],
   authors: [{ name: "Zerxio" }],
   creator: "Zerxio",
   publisher: "Zerxio",
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/favicon.ico',
         width: 1200,
         height: 630,
         alt: 'Zerxio Hosting Web',
@@ -64,8 +65,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zerxio - Hosting Web de Alto Rendimiento',
     description: 'Hosting Web profesional que acelera el éxito de tu negocio',
-    images: ['/twitter-image.jpg'],
-    creator: '@zerxio',
+    images: ['/favicon.ico'],
   },
   robots: {
     index: true,
@@ -84,8 +84,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    apple: '/favicon.png',
   },
   manifest: '/site.webmanifest',
 };
@@ -108,6 +107,7 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          <Analytics /> 
         </AOSProvider>
       </body>
     </html>

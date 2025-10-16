@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zerxio - Hosting de Alto Rendimiento
 
-## Getting Started
+Bienvenido a Zerxio, una plataforma de hosting creada por dos apasionados desarrolladores web que buscan ofrecer soluciones de alojamiento confiables y de alto rendimiento.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Hosting compartido de alto rendimiento
+- Soporte para múltiples lenguajes de programación
+- Panel de control intuitivo
+- Certificados SSL gratuitos
+- Copias de seguridad automáticas
+- Soporte técnico especializado
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js con TypeScript
+- **Estilos**: Tailwind CSS
+- **Despliegue**: Vercel
+- **Tipografía**: Geist (optimizada con `next/font`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👥 Sobre Nosotros
 
-## Learn More
+Dos amigos desarrolladores apasionados por la web, creando soluciones de hosting que nos hubiera gustado tener cuando empezamos.
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Licencia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este proyecto está bajo la licencia [MIT](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📞 Encontranos
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Web](https://www.zerxio.com/)
+- [Instagram](https://www.instagram.com/zerxio_hosting/)
