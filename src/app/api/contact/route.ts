@@ -55,39 +55,15 @@ export async function POST(req: Request) {
     });
 
     if (!res.ok) {
-      const errorData = await res.json().catch(() => ({}));
-      console.error("Error enviando email con Resend:", {
-        status: res.status,
-        statusText: res.statusText,
-        error: errorData,
-        headers: Object.fromEntries(res.headers.entries())
-      });
-      return NextResponse.json(
-        { 
-          ok: false, 
-          message: `Error al enviar el email: ${errorData.message || res.statusText}`,
-          details: process.env.NODE_ENV === 'development' ? errorData : undefined
-        }, 
-        { status: 500 }
-      );
+      const text = await res.text();
+      console.error("Error enviando email con Resend:", res.status, text);
+      return NextResponse.json({ ok: false, message: "No se pudo enviar el email" }, { status: 500 });
     }
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    const error = err as Error;
-    console.error("/api/contact error:", {
-      message: error.message,
-      stack: error.stack,
-      name: error.name
-    });
-    return NextResponse.json(
-      { 
-        ok: false, 
-        message: `Error inesperado: ${error.message}`,
-        details: process.env.NODE_ENV === 'development' ? error.stack : undefined
-      }, 
-      { status: 500 }
-    );
+    console.error("/api/contact error:", err);
+    return NextResponse.json({ ok: false, message: "Error inesperado" }, { status: 500 });
   }
 }
 
