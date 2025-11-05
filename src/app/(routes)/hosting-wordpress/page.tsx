@@ -22,7 +22,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Ideal para blogs y sitios web personales",
     cost: 23000,
     list: "1 Sitio WordPress\n10GB Almacenamiento SSD\n100,000 Visitas Mensuales\nCertificado SSL Gratis\nCopias de Seguridad Diarias",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/wp_incio/?group_id=8",
+    link: "https://panel.zerxio.com/acc/order/main/packages/wp_incio/?group_id=8",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Perfecto para negocios y lugares web profesionales",
     cost: 38000,
     list: "3 Sitios WordPress\n30GB Almacenamiento SSD\n300,000 Visitas Mensuales\nCertificado SSL Gratis\nCopias de Seguridad Diarias\nCaché Avanzado",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/wp_plys/?group_id=9",
+    link: "https://panel.zerxio.com/acc/order/main/packages/wp_plys/?group_id=9",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Para lugares web de alto tráfico y e-commerce",
     cost: 62000,
     list: "Sitios WordPress Ilimitados\n100GB Almacenamiento SSD\n1,000,000 Visitas Mensuales\nCertificado SSL Gratis\nCopias de Seguridad en Tiempo Real\nCaché Avanzado\nSoporte Prioritario",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/wp_avanzado/?group_id=10",
+    link: "https://panel.zerxio.com/acc/order/main/packages/wp_avanzado/?group_id=10",
   }
 ];
 

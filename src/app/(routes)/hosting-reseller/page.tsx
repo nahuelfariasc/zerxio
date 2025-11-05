@@ -21,7 +21,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Ideal para empezar tu negocio de hosting",
     cost: 50000,
     list: "5 GB SSD ultrarrápido\n50 GB transferencia mensual\n5 cuentas de email\n2 bases de datos MySQL\n2 subdominios\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/reseller_initial/?group_id=16",
+    link: "https://panel.zerxio.com/acc/order/main/packages/reseller_initial/?group_id=16",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Perfecto para agencias en crecimiento",
     cost: 86000,
     list: "15 GB SSD ultrarrápido\n100 GB transferencia mensual\n10 cuentas de email\n5 bases de datos MySQL\n6 subdominios\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/reseller_advanced/?group_id=15",
+    link: "https://panel.zerxio.com/acc/order/main/packages/reseller_advanced/?group_id=15",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Para empresas con altos requerimientos",
     cost: 136000,
     list: "30 GB SSD ultrarrápido\nTransferencia ilimitada\nCuentas de email ilimitadas\nBases de datos ilimitadas\n5 dominios alias (parked)\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/reseller_pro/?group_id=14",
+    link: "https://panel.zerxio.com/acc/order/main/packages/reseller_pro/?group_id=14",
   }
 ];
 

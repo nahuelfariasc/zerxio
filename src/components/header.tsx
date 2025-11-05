@@ -76,7 +76,7 @@ export default function Header() {
             )}
           </div>
           <Link href="/contacto" className="text-slate-300 hover:text-white transition-colors">Contacto</Link>
-          <Link href="https://panel.zerxio.com/panel/blesta/client/login/">
+          <Link href="https://panel.zerxio.com/acc/client/login/">
             <Button
               variant="outline"
               className=""
@@ -129,7 +129,7 @@ export default function Header() {
             Contacto
           </Link>
           <Link 
-            href="https://panel.zerxio.com/panel/blesta/client/login/" 
+            href="https://panel.zerxio.com/acc/client/login/" 
             className="block py-2 text-slate-300 hover:text-white"
             onClick={() => setOpen(false)}
           >

@@ -22,7 +22,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Ideal para sitios web personales y blogs",
     cost: 12000,
     list: "5 GB SSD ultrarrápido\n50 GB transferencia mensual\n5 cuentas de email\n2 bases de datos MySQL\n2 subdominios\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/host_basico/?group_id=11"
+    link: "https://panel.zerxio.com/acc/order/main/packages/host_basico/?group_id=11"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Perfecto para pequeñas empresas",
     cost: 25000,
     list: "15 GB SSD ultrarrápido\n100 GB transferencia mensual\n10 cuentas de email\n5 bases de datos MySQL\n6 subdominios\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/host_intermedio/?group_id=12"
+    link: "https://panel.zerxio.com/acc/order/main/packages/host_intermedio/?group_id=12"
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const compartidoPlans: CompartidoPlanData[] = [
     description: "Para sitios con alto tráfico",
     cost: 40000,
     list: "30 GB SSD ultrarrápido\nTransferencia ilimitada\nCuentas de email ilimitadas\nBases de datos ilimitadas\nCertificado SSL Gratis\n5 dominios alias (parked)\nCertificado SSL gratuito\ncPanel incluido",
-    link: "https://panel.zerxio.com/panel/blesta/order/main/packages/host_advanced/?group_id=13"
+    link: "https://panel.zerxio.com/acc/order/main/packages/host_advanced/?group_id=13"
   }
 ];
 
