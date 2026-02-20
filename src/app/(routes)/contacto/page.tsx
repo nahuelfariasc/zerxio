@@ -173,7 +173,8 @@ export default function Contacto() {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-300">
-                  Aceptamos tarjetas de crédito/débito, PayPal, transferencias bancarias y criptomonedas principales.
+                  Aceptamos transferencias bancarias y pagos mediante UaláBis.
+                  Muy pronto incorporaremos Mercado Pago para ofrecer más medios de pago.
                 </p>
               </CardContent>
             </Card>
