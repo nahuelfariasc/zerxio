@@ -9,7 +9,7 @@ const examplePlans: Plan[] = [
     id: 1,
     name: "Hosting Compartido",
     description: "Perfecto para sitios web personales, blogs y pequeñas empresas que buscan una solución económica y confiable",
-    price: "Desde $12000",
+    price: "Desde $13200",
     features: [
       "Desde 5 GB SSD",
       "cPanel incluido",
@@ -24,7 +24,7 @@ const examplePlans: Plan[] = [
     id: 2,
     name: "WordPress Hosting",
     description: "Perfecto para sitios web personales, blogs y pequeñas empresas que buscan una solución económica y confiable",
-    price: "Desde $23000",
+    price: "Desde $25300",
     features: [
       "WordPress preinstalado",
       "Optimizado para WP",
@@ -39,7 +39,7 @@ const examplePlans: Plan[] = [
     id: 3,
     name: "Hosting Reseller",
     description: "Ideal para agencias y desarrolladores que quieren ofrecer hosting a sus clientes con cuentas cPanel independientes",
-    price: "Desde $50000",
+    price: "Desde $55000",
     features: [
       "Hasta 20 cuentas cPanel",
       "WHM incluido",
